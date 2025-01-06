@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Loader } from './Loader';
 import { getPeople } from '../api';
 import { Person } from '../types';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import classNames from 'classnames';
 import { PersonLink } from './PersonLink';
 
@@ -37,8 +37,6 @@ export const PeoplePage = () => {
 
     return { ...person, mother, father };
   });
-
-  console.log(prepPeople);
 
   return (
     <>
